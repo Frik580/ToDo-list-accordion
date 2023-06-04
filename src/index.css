@@ -1,0 +1,33 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hover {
+  transition: opacity 0.3s ease-in-out;
+  opacity: .8;
+}
+
+.hover:hover {
+  opacity: 1;
+}
+
+.hover-button {
+  /* transition: opacity 0.3s ease-in-out; */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hover-button:hover {
+  /* opacity: 0.8; */
+  background-color: rgb(224, 110, 100);
+}
+
+.link {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+}

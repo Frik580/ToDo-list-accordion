@@ -1,0 +1,15 @@
+.column {
+    width: 80px;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 54px;
+    border-right: 1px solid #E1E1E1;
+}
+
+.column__image {
+    width: 56px;
+    height: 52px;
+    margin: 0 auto;
+
+}

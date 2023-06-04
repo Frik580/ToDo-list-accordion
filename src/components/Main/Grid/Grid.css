@@ -1,0 +1,114 @@
+.grid {
+  display: grid;
+  grid-template-rows: 47px 0;
+  transition: 300ms;
+  width: 100%;
+}
+
+.grid__top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 47px;
+  background-color: #e1e1fb;
+}
+
+.grid__bottom {
+  /* display: flex; */
+  /* flex-direction: column;
+  width: 100%; */
+  /* list-style-type: none; */
+  /* align-items: center; */
+  overflow: hidden;
+}
+
+.grid_active {
+  grid-template-rows: 47px auto;
+}
+
+.grid__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-style: normal;
+  width: 212px;
+}
+
+.grid__navigation {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.grid__close-button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  outline: none;
+}
+
+.grid__close-button::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 2px;
+  border-radius: 1px;
+  top: 5px;
+  left: 6px;
+  background-color: #373745;
+  transform: rotate(45deg);
+}
+
+.grid__close-button::after {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 2px;
+  border-radius: 1px;
+  top: 5px;
+  left: 12px;
+  background-color: #373745;
+  transform: rotate(-45deg);
+}
+
+.grid__open-button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  outline: none;
+}
+
+.grid__open-button::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 2px;
+  border-radius: 1px;
+  top: 4px;
+  left: 12px;
+  background-color: #373745;
+  transform: rotate(45deg);
+}
+
+.grid__open-button::after {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 2px;
+  border-radius: 1px;
+  top: 4px;
+  left: 5.5px;
+  background-color: #373745;
+  transform: rotate(-45deg);
+}
