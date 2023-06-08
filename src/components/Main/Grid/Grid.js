@@ -7,11 +7,14 @@ function Grid({ onOpenGrid, isGridOpen, title, data }) {
 
   useEffect(() => {
     setRenderData(data);
-    console.log(renderData);
-  }, [data, renderData]);
+  }, [data]);
 
   return (
-    <div className={`grid ${isGridOpen && "grid_active"}`}>
+    // <div className={`grid ${isGridOpen && "grid_active"}`}>
+    <div
+      className="grid"
+      style={{ gridTemplateRows: isGridOpen && `auto calc(${renderData.length} * 70px)` }}
+    >
       <div className="grid__top">
         <p className="grid__title">{title}</p>
         <div className="grid__navigation">

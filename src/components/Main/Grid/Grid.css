@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-template-rows: 47px 0;
+  grid-template-rows: auto  0;
   transition: 500ms;
   width: 100%;
 }
@@ -18,7 +18,7 @@
 }
 
 .grid_active {
-  grid-template-rows: 47px 616px;
+  grid-template-rows: auto  616px;
 }
 
 .grid__title {
